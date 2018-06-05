@@ -1,3 +1,9 @@
+# docker-compiler-explorer with Fortran suppert
+
+This Dockerfile will build/pull a rather large image/container, using our additions for Fortran support to run [Matt Godbolt's Compiler Explorer](https://github.com/mattgodbolt/compiler-explorer) with Fortran enabled. While Fortran support is there, syntax highlighting is still in its infancy.
+
+The Readme.md from the original repo read:
+
 # docker-compiler-explorer
 
 A docker-based version of [Matt Godbolt's Compiler Explorer](https://github.com/mattgodbolt/compiler-explorer) for self-hosting purposes.
