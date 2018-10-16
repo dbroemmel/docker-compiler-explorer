@@ -2,7 +2,7 @@
 
 This Dockerfile will build/pull a rather large image/container, using our additions for Fortran support to run [Matt Godbolt's Compiler Explorer](https://github.com/mattgodbolt/compiler-explorer) with Fortran enabled. While Fortran support is there, syntax highlighting can still be improved and doesn't catch all Fortran styles.
 
-Run the usual `docker build .` to create the image (approx. 5GB in size), then `docker run -p 10240:10204 <image>` to access it via `http://localhost:10240`.
+Run the usual `docker build .` to create the image (approx. 5GB in size), then `docker run -p 10240:10240 <image>` to access it via `http://localhost:10240`.
 
 The Readme.md from the original repo read:
 
