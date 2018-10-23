@@ -4,6 +4,13 @@ This Dockerfile will build/pull a rather large image/container, using our additi
 
 Run the usual `docker build .` to create the image (approx. 5GB in size), then `docker run -p 10240:10240 <image>` to access it via `http://localhost:10240`.
 
+To run the container, make changes, and review results:
+* run the container, starting a shell:
+  `docker run -it -p 10240:10240 --entrypoint /bin/bash <image>`
+* change source
+* `make dev; /usr/bin/nodejs /compiler-explorer/app.js`
+* visit `http://localhost:10240`
+
 The Readme.md from the original repo read:
 
 # docker-compiler-explorer
